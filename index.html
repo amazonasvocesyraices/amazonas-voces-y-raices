@@ -1,44 +1,474 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amazonas Voces y Raíces</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Amazonas Voces y Raíces: descubre la cultura, historia y naturaleza de Amazonas, Perú.">
+  <meta name="theme-color" content="#173f32">
 
-    <link rel="stylesheet" href="style.css">
+  <title>Amazonas Voces y Raíces | Cultura, naturaleza e historia</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <header>
-        <img src="./images/logo.png" alt="Logo Amazonas Voces y Raíces" class="logo">
+  <!-- ENCABEZADO Y MENÚ -->
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Amazonas Voces y Raíces">
+      <img src="images/logo.png" alt="Logo de Amazonas Voces y Raíces">
+      <span>Amazonas <b>Voces y Raíces</b></span>
+    </a>
 
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Cultura</a>
-            <a href="#">Artesanía</a>
-            <a href="#">Turismo</a>
-            <a href="#">Galería</a>
-            <a href="#">Contacto</a>
-        </nav>
-    </header>
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="mainNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-    <section class="hero">
+    <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nuestra esencia</a>
+      <a href="#explora">Explora</a>
+      <a href="#articulos">Historias</a>
+      <a href="#galeria">Galería</a>
+      <a class="nav-contact" href="#contacto">Contáctanos</a>
+    </nav>
+  </header>
 
-        <h2>Bienvenidos</h2>
+  <main id="contenido">
 
-        <p>
-            Descubre la riqueza cultural, turística y artesanal
-            de la región Amazonas.
+    <!-- PORTADA PRINCIPAL -->
+    <section class="hero" id="inicio">
+      <div class="hero-shade"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">
+          <span></span> AMAZONAS · PERÚ
         </p>
 
-        <button>Explorar</button>
+        <h1>
+          Donde cada paisaje<br>
+          guarda una <em>historia.</em>
+        </h1>
 
+        <p class="hero-copy">
+          Un viaje por las raíces, las voces y la extraordinaria
+          riqueza natural y cultural de nuestra región.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-gold" href="#explora">
+            Comienza a explorar <span>↗</span>
+          </a>
+
+          <a class="text-link" href="#nosotros">
+            Conoce nuestro propósito ↓
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-note">
+        <span class="note-line"></span>
+        <span>Historias que conectan con nuestras raíces</span>
+      </div>
+
+      <div class="hero-index">01 <span>/</span> AMAZONAS</div>
     </section>
 
-    <script src="script.js"></script>
+    <!-- PRESENTACIÓN DE LA MARCA -->
+    <section class="intro section-wrap" id="nosotros">
+      <div class="intro-label">
+        <span class="section-number">01</span>
+        <span>NUESTRA ESENCIA</span>
+      </div>
+
+      <div class="intro-content">
+        <p class="eyebrow eyebrow-dark">MÁS QUE UN DESTINO</p>
+
+        <h2>
+          Un territorio lleno de<br>
+          <em>vida, memoria y tradición.</em>
+        </h2>
+
+        <p class="intro-text">
+          Amazonas Voces y Raíces es un espacio para descubrir
+          y valorar la identidad de nuestra región. Compartimos
+          relatos, lugares, costumbres y conocimientos que nos
+          acercan a la riqueza del Perú y a las comunidades que
+          mantienen vivas sus tradiciones.
+        </p>
+
+        <a class="underlined-link" href="#articulos">
+          Leer nuestras historias <span>↗</span>
+        </a>
+      </div>
+
+      <div class="intro-stamp">
+        <span>✳</span>
+        <b>NATURALEZA<br>CULTURA<br>IDENTIDAD</b>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PARA EXPLORAR -->
+    <section class="explore-section" id="explora">
+      <div class="section-wrap">
+
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">DESCUBRE AMAZONAS</p>
+            <h2>Un mundo por <em>explorar.</em></h2>
+          </div>
+
+          <p>
+            Desde paisajes que asombran hasta expresiones culturales
+            que cuentan quiénes somos.
+          </p>
+        </div>
+
+        <div class="explore-grid">
+
+          <a class="explore-card explore-large"
+             href="#articulos" data-category-link="turismo">
+            <img
+              src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85"
+              alt="Paisaje verde de una región tropical"
+              loading="lazy">
+            <span class="card-overlay"></span>
+            <span class="card-tag">01 · NATURALEZA</span>
+            <span class="explore-card-title">
+              Paisajes que<br>te dejan sin aliento <b>↗</b>
+            </span>
+          </a>
+
+          <a class="explore-card"
+             href="#articulos" data-category-link="cultura">
+            <img
+              src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?auto=format&fit=crop&w=900&q=85"
+              alt="Arte y expresiones culturales"
+              loading="lazy">
+            <span class="card-overlay"></span>
+            <span class="card-tag">02 · CULTURA</span>
+            <span class="explore-card-title">
+              Tradiciones<br>que nos unen <b>↗</b>
+            </span>
+          </a>
+
+          <a class="explore-card"
+             href="#articulos" data-category-link="historia">
+            <img
+              src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=85"
+              alt="Montañas bajo un cielo estrellado"
+              loading="lazy">
+            <span class="card-overlay"></span>
+            <span class="card-tag">03 · HISTORIA</span>
+            <span class="explore-card-title">
+              Huellas del<br>pasado <b>↗</b>
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG Y PUBLICACIONES -->
+    <section class="stories section-wrap" id="articulos">
+
+      <div class="section-heading stories-heading">
+        <div>
+          <p class="eyebrow eyebrow-dark">EL BLOG</p>
+          <h2>Relatos con <em>identidad.</em></h2>
+        </div>
+
+        <p>
+          Ideas, lugares y costumbres para mirar Amazonas con nuevos ojos.
+        </p>
+      </div>
+
+      <!-- BUSCADOR Y FILTROS -->
+      <div class="story-tools">
+
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Buscar una historia..."
+            aria-label="Buscar historias">
+        </label>
+
+        <div class="filter-list" role="group" aria-label="Filtrar historias">
+          <button class="filter-button active"
+                  data-filter="todos"
+                  aria-pressed="true">Todo</button>
+
+          <button class="filter-button"
+                  data-filter="turismo"
+                  aria-pressed="false">Turismo</button>
+
+          <button class="filter-button"
+                  data-filter="cultura"
+                  aria-pressed="false">Cultura</button>
+
+          <button class="filter-button"
+                  data-filter="historia"
+                  aria-pressed="false">Historia</button>
+        </div>
+      </div>
+
+      <!-- TARJETAS DE HISTORIAS -->
+      <div class="story-grid" id="storyGrid">
+
+        <article class="story-card"
+                 data-category="turismo"
+                 data-search="kuelap historia arqueología chachapoyas turismo">
+
+          <a class="story-image" href="#contacto"
+             aria-label="Consultar sobre Kuélap">
+            <img
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
+              alt="Montañas imponentes"
+              loading="lazy">
+            <span class="image-arrow">↗</span>
+          </a>
+
+          <div class="story-meta">
+            <span>TURISMO</span>
+            <span>01 / DESTINOS</span>
+          </div>
+
+          <h3>Kuélap: una mirada a nuestro pasado</h3>
+
+          <p>
+            Acércate al legado de una de las expresiones arqueológicas
+            más emblemáticas de Amazonas.
+          </p>
+
+          <a class="story-link" href="#contacto">
+            Descubrir historia <span>→</span>
+          </a>
+        </article>
+
+        <article class="story-card"
+                 data-category="cultura"
+                 data-search="tradiciones cultura comunidades artesanía identidad">
+
+          <a class="story-image" href="#contacto"
+             aria-label="Conocer las tradiciones de Amazonas">
+            <img
+              src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=85"
+              alt="Manos trabajando en una creación artesanal"
+              loading="lazy">
+            <span class="image-arrow">↗</span>
+          </a>
+
+          <div class="story-meta">
+            <span>CULTURA</span>
+            <span>02 / COMUNIDAD</span>
+          </div>
+
+          <h3>Tradiciones que siguen vivas</h3>
+
+          <p>
+            Las costumbres, los saberes y la creatividad que pasan
+            de generación en generación.
+          </p>
+
+          <a class="story-link" href="#contacto">
+            Descubrir historia <span>→</span>
+          </a>
+        </article>
+
+        <article class="story-card"
+                 data-category="historia"
+                 data-search="gocta naturaleza catarata biodiversidad aventura">
+
+          <a class="story-image" href="#contacto"
+             aria-label="Explorar la riqueza natural de Amazonas">
+            <img
+              src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=900&q=85"
+              alt="Cascada rodeada de vegetación"
+              loading="lazy">
+            <span class="image-arrow">↗</span>
+          </a>
+
+          <div class="story-meta">
+            <span>HISTORIA NATURAL</span>
+            <span>03 / NATURALEZA</span>
+          </div>
+
+          <h3>La fuerza del agua y el bosque</h3>
+
+          <p>
+            Un recorrido por los paisajes y la biodiversidad que
+            hacen única a nuestra región.
+          </p>
+
+          <a class="story-link" href="#contacto">
+            Descubrir historia <span>→</span>
+          </a>
+        </article>
+
+      </div>
+
+      <p class="no-results" id="noResults" hidden>
+        No encontramos historias con esa búsqueda.
+        Prueba con otra palabra.
+      </p>
+
+      <p class="editor-note">
+        Estas publicaciones son ejemplos iniciales. Sustituye los textos
+        e imágenes por contenido propio y fuentes verificadas.
+      </p>
+    </section>
+
+    <!-- FRASE DESTACADA -->
+    <section class="quote-band">
+      <div class="quote-mark">“</div>
+
+      <blockquote>
+        Conocer nuestras raíces es una forma de cuidar lo que somos
+        y construir lo que queremos ser.
+      </blockquote>
+
+      <p>AMAZONAS VOCES Y RAÍCES</p>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="gallery-section section-wrap" id="galeria">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">POSTALES DE NUESTRA TIERRA</p>
+          <h2>Amazonas en <em>imágenes.</em></h2>
+        </div>
+
+        <p>
+          Una pequeña ventana a los paisajes, colores y momentos
+          de nuestra región.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+
+        <button class="gallery-item gallery-tall"
+                data-full="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=90"
+                aria-label="Ampliar imagen de bosque">
+          <img
+            src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80"
+            alt="Bosque verde y luminoso"
+            loading="lazy">
+          <span>01 · BOSQUES</span>
+        </button>
+
+        <button class="gallery-item"
+                data-full="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=90"
+                aria-label="Ampliar imagen de paisaje">
+          <img
+            src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80"
+            alt="Paisaje de agua y montañas"
+            loading="lazy">
+          <span>02 · PAISAJES</span>
+        </button>
+
+        <button class="gallery-item"
+                data-full="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1600&q=90"
+                aria-label="Ampliar imagen de naturaleza">
+          <img
+            src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=80"
+            alt="Luz del sol entre los árboles"
+            loading="lazy">
+          <span>03 · NATURALEZA</span>
+        </button>
+
+      </div>
+
+      <p class="editor-note">
+        Selecciona una fotografía para verla ampliada.
+        Las imágenes son ilustrativas; verifica su pertinencia antes de publicar.
+      </p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact-section" id="contacto">
+      <div class="contact-inner">
+
+        <div>
+          <p class="eyebrow">SUMEMOS VOCES</p>
+
+          <h2>
+            ¿Tienes una historia<br>
+            que merece ser <em>contada?</em>
+          </h2>
+
+          <p>
+            Nos encantaría conocer tus ideas, recuerdos y propuestas
+            para seguir compartiendo la riqueza de Amazonas.
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <span class="contact-icon">✉</span>
+          <p>ESCRÍBENOS</p>
+
+          <a href="mailto:amazonasvocesyraices@gmail.com">
+            amazonasvocesyraices@gmail.com
+          </a>
+
+          <button class="button button-light"
+                  id="copyEmail"
+                  type="button">
+            Copiar correo <span>⧉</span>
+          </button>
+
+          <span class="copy-status"
+                id="copyStatus"
+                role="status"
+                aria-live="polite"></span>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <a class="footer-brand" href="#inicio">
+      Amazonas <b>Voces y Raíces</b>
+    </a>
+
+    <p>
+      Celebrando la cultura, la naturaleza y la identidad
+      de Amazonas, Perú.
+    </p>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Amazonas Voces y Raíces</span>
+      <a href="#inicio">Volver arriba ↑</a>
+    </div>
+  </footer>
+
+  <!-- VENTANA PARA AMPLIAR LAS FOTOGRAFÍAS -->
+  <dialog class="lightbox"
+          id="lightbox"
+          aria-label="Vista ampliada de fotografía">
+
+    <button class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Cerrar fotografía">×</button>
+
+    <img id="lightboxImage" src="" alt="">
+  </dialog>
 
 </body>
-
 </html>
