@@ -1,11 +1,12 @@
+// Espera a que toda la página cargue
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("Bienvenido a Amazonas Voces y Raíces");
 
-    const enlaces = document.querySelectorAll("nav a");
+    // Selecciona el botón "Explorar"
+    const boton = document.querySelector("button");
 
-    enlaces.forEach(enlace => {
-        enlace.addEventListener("click", function () {
-            console.log("Navegando a: " + this.textContent);
-        });
+    // Agrega una acción al hacer clic
+    boton.addEventListener("click", function () {
+        alert("¡Bienvenido a Amazonas Voces y Raíces! 🌿");
     });
+
 });
