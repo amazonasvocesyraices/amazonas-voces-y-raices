@@ -1,53 +1,88 @@
 
-# 🌿 Amazonas Voces y Raíces
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazonas Voces y Raíces</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-### Las historias de nuestra tierra, las voces de nuestra gente
+  <header class="hero">
+    <nav>
+      <a href="#inicio" class="marca">🌿 Amazonas Voces y Raíces</a>
+      <div class="menu">
+        <a href="#cultura">Cultura</a>
+        <a href="#naturaleza">Naturaleza</a>
+        <a href="#historias">Historias</a>
+      </div>
+    </nav>
 
-Bienvenidos a **Amazonas Voces y Raíces**, un espacio dedicado a preservar y compartir la cultura, las tradiciones, las leyendas y la belleza natural de Amazonas, Perú.
+    <div class="presentacion" id="inicio">
+      <p class="etiqueta">AMAZONAS · PERÚ</p>
+      <h1>Voces que cuentan,<br>raíces que permanecen</h1>
+      <p>Descubre las tradiciones, leyendas y maravillas de nuestra tierra.</p>
+      <a class="boton" href="#explorar">Explorar nuestra tierra ↓</a>
+    </div>
+  </header>
 
----
+  <main>
+    <section id="explorar" class="seccion">
+      <p class="etiqueta">NUESTRA IDENTIDAD</p>
+      <h2>Un viaje por nuestras raíces</h2>
+      <p class="intro">Cada rincón de Amazonas guarda una historia que merece ser contada.</p>
 
-## 🌄 Descubre nuestra tierra
+      <div class="tarjetas">
+        <article class="tarjeta" id="cultura">
+          <div class="icono">🏛️</div>
+          <h3>Historia y cultura</h3>
+          <p>Conoce nuestro legado histórico y el patrimonio de nuestros antepasados.</p>
+          <a href="#historias">Descubrir historias →</a>
+        </article>
 
-Conoce los lugares, las historias y las costumbres que nos llenan de orgullo.
+        <article class="tarjeta" id="naturaleza">
+          <div class="icono">🌿</div>
+          <h3>Naturaleza viva</h3>
+          <p>Explora cataratas, montañas, bosques y paisajes extraordinarios.</p>
+          <a href="#lugares">Explorar lugares →</a>
+        </article>
 
-## 🏛️ Historia y cultura
+        <article class="tarjeta" id="historias">
+          <div class="icono">📖</div>
+          <h3>Voces y leyendas</h3>
+          <p>Descubre relatos y tradiciones transmitidos de generación en generación.</p>
+          <a href="#comunidad">Compartir una historia →</a>
+        </article>
+      </div>
+    </section>
 
-Descubre el legado de nuestros antepasados, los sitios arqueológicos y las historias que forman parte de nuestra identidad.
+    <section id="lugares" class="seccion lugares">
+      <p class="etiqueta">TESOROS DE AMAZONAS</p>
+      <h2>Lugares que nos inspiran</h2>
+      <div class="lista-lugares">
+        <p>🏞️ <strong>Catarata de Gocta</strong> — fuerza y belleza natural.</p>
+        <p>🏛️ <strong>Kuélap</strong> — memoria de una gran civilización.</p>
+        <p>🌄 <strong>Chachapoyas</strong> — historia, tradición y hospitalidad.</p>
+        <p>🧭 <strong>Leymebamba</strong> — patrimonio y memoria cultural.</p>
+      </div>
+    </section>
 
-## 🎭 Tradiciones y costumbres
+    <section id="comunidad" class="comunidad">
+      <p class="etiqueta">TU VOZ IMPORTA</p>
+      <h2>¿Qué historia quieres compartir?</h2>
+      <p>Ayúdanos a mantener vivas las voces y raíces de Amazonas.</p>
+      <a class="boton" href="mailto:contacto@ejemplo.com?subject=Historia%20de%20Amazonas">
+        Comparte tu historia
+      </a>
+      <p class="nota">Antes de publicar, reemplaza el correo de ejemplo por uno real.</p>
+    </section>
+  </main>
 
-Conoce nuestras fiestas patronales, danzas, artesanías, gastronomía y celebraciones populares.
+  <footer>
+    <p>🌿 Amazonas Voces y Raíces</p>
+    <p>Nuestra historia, nuestra identidad.</p>
+  </footer>
 
-## 🌳 Naturaleza y turismo
-
-Explora las cataratas, montañas, bosques y paisajes extraordinarios de nuestra región.
-
-## 📖 Leyendas de Amazonas
-
-Sumérgete en los relatos populares transmitidos de generación en generación.
-
-## 📍 Lugares que debes conocer
-
-- **Kuélap:** patrimonio arqueológico de gran importancia.
-- **Catarata de Gocta:** una impresionante maravilla natural.
-- **Leymebamba:** historia, cultura y patrimonio.
-- **Chachapoyas:** tradición, arquitectura y encanto regional.
-
----
-
-## 💚 Nuestra misión
-
-Difundir y preservar la riqueza cultural, histórica y natural de Amazonas, dando voz a sus comunidades y promoviendo el orgullo por nuestras raíces.
-
-## ✍️ Comparte tu historia
-
-¿Conoces una leyenda, una tradición o una historia de tu comunidad?
-
-¡Queremos conocerla y compartirla!
-
----
-
-**Amazonas Voces y Raíces**
-
-*Nuestra historia, nuestra identidad.*
+</body>
+</html>
