@@ -1,9 +1,3 @@
-.logo {
-    width: 180px;
-    max-width: 90%;
-    height: auto;
-    display: block;
-    margin: 0 auto 15px;
 }body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -58,4 +52,11 @@ button {
 
 button:hover {
     background: #FFA000;
+}
+.logo {
+    width: 180px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px;
 }
