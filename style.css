@@ -1311,3 +1311,50 @@ html { scroll-padding-top: 162px; }
   .brand img.logo-img { width: 95px; height: 95px; flex: 0 0 95px; max-width: none; object-fit: contain; }
   html { scroll-padding-top: 128px; }
 }
+
+
+/* AJUSTE FINAL — encabezado blanco más compacto alrededor del logo */
+@media (min-width: 1101px) {
+  .site-header {
+    min-height: 118px;
+    padding: 10px 34px;
+  }
+  .brand img.logo-img {
+    width: 150px;
+    height: auto;
+    flex: 0 0 150px;
+    max-width: none;
+    object-fit: contain;
+  }
+  html { scroll-padding-top: 130px; }
+}
+
+@media (min-width: 651px) and (max-width: 1100px) {
+  .site-header {
+    min-height: 104px;
+    padding: 8px 24px;
+  }
+  .brand img.logo-img {
+    width: 125px;
+    height: auto;
+    flex: 0 0 125px;
+    max-width: none;
+    object-fit: contain;
+  }
+  html { scroll-padding-top: 116px; }
+}
+
+@media (max-width: 650px) {
+  .site-header {
+    min-height: 86px;
+    padding: 7px 16px;
+  }
+  .brand img.logo-img {
+    width: 92px;
+    height: auto;
+    flex: 0 0 92px;
+    max-width: none;
+    object-fit: contain;
+  }
+  html { scroll-padding-top: 98px; }
+}
