@@ -110,9 +110,10 @@ a {
 .brand img,
 .brand img.logo-img {
   display: block;
-  width: auto;
-  height: 110px;
+  width: 120px;
+  height: 108px;
   max-width: none;
+  flex: 0 0 auto;
   object-fit: contain;
   border-radius: 0;
 }
@@ -1011,7 +1012,7 @@ h2 em {
 
   .brand img,
   .brand img.logo-img {
-    width: auto;
+    width: 85px;
     height: 76px;
   }
 
@@ -1198,5 +1199,25 @@ h2 em {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* Garantiza que el emblema sea visible: sin texto ni reducción por otras reglas */
+@media (min-width: 651px) {
+  .site-header .brand > img.logo-img {
+    width: 120px;
+    height: 108px;
+    max-width: none;
+    flex-shrink: 0;
+    object-fit: contain;
+  }
+}
+@media (max-width: 650px) {
+  .site-header .brand > img.logo-img {
+    width: 85px;
+    height: 76px;
+    max-width: none;
+    flex-shrink: 0;
+    object-fit: contain;
   }
 }

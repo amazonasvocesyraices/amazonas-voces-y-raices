@@ -1,19 +1,3 @@
-# 🌿 Amazonas Voces y Raíces
+# Amazonas Voces y Raíces
 
-Bienvenidos a nuestro proyecto.
-
-## 📖 Sobre nosotros
-
-Amazonas Voces y Raíces es un espacio dedicado a compartir la riqueza cultural, histórica y natural de la región Amazonas del Perú.
-
-## 🌎 Nuestro contenido
-
-- 🏞️ Turismo
-- 🌳 Biodiversidad
-- 🎭 Cultura
-- 📚 Historia
-- 📷 Galería de imágenes
-
-## 📞 Contacto
-
-Correo: amazonasvocesyraices@gmail.com
+Abre index.html para comprobar el sitio. Para GitHub Pages, sube index.html, style.css, script.js y la carpeta images a la raíz del repositorio. El encabezado mide 116px; logo 108px de alto en computadora y 76px en móvil.
