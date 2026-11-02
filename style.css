@@ -21,7 +21,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 90px;
+  scroll-padding-top: 128px;
 }
 
 body {
@@ -76,8 +76,9 @@ a {
 /* ENCABEZADO */
 
 .site-header {
-  min-height: 84px;
-  padding: 10px clamp(20px, 5vw, 76px);
+  height: 116px;
+  min-height: 0;
+  padding: 3px clamp(20px, 5vw, 76px);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,8 +93,9 @@ a {
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0;
   text-decoration: none;
+  flex-shrink: 0;
   color: var(--forest);
   font-family: var(--serif);
   font-size: 17px;
@@ -105,11 +107,14 @@ a {
   font-weight: 700;
 }
 
-.brand img {
-  width: 62px;
-  height: 48px;
+.brand img,
+.brand img.logo-img {
+  display: block;
+  width: auto;
+  height: 110px;
+  max-width: none;
   object-fit: contain;
-  border-radius: 5px;
+  border-radius: 0;
 }
 
 .main-nav {
@@ -915,8 +920,17 @@ h2 em {
 
 @media (max-width: 950px) {
   .site-header {
-    padding-inline: 24px;
+    height: 100px;
+    padding: 4px 24px;
   }
+
+  .brand img,
+  .brand img.logo-img {
+    width: auto;
+    height: 92px;
+  }
+
+  html { scroll-padding-top: 112px; }
 
   .menu-toggle {
     display: block;
@@ -981,12 +995,13 @@ h2 em {
 
 @media (max-width: 650px) {
   html {
-    scroll-padding-top: 72px;
+    scroll-padding-top: 94px;
   }
 
   .site-header {
-    min-height: 72px;
-    padding: 8px 18px;
+    height: 82px;
+    min-height: 0;
+    padding: 3px 16px;
   }
 
   .brand {
@@ -994,9 +1009,10 @@ h2 em {
     gap: 8px;
   }
 
-  .brand img {
-    width: 48px;
-    height: 42px;
+  .brand img,
+  .brand img.logo-img {
+    width: auto;
+    height: 76px;
   }
 
   .hero {
