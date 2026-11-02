@@ -1291,10 +1291,10 @@ html { scroll-padding-top: 136px; }
   }
 
   .site-header .brand > img.logo-img {
-    width: 330px;
-    height: auto;
+    width: 380px;
+    height: 82;
     max-width: 100%;
-    max-height: 80px;
+    max-height: 84x;
     object-fit: contain;
     object-position: left center;
     object-position: left center;
@@ -1303,7 +1303,7 @@ html { scroll-padding-top: 136px; }
 
   .site-header .menu-toggle {
     display: block;
-    flex: 0 0 42px;
+    flex: 0 0 40px;
     margin: 0;
   }
 
