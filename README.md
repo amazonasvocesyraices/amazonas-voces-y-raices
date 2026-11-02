@@ -1,9 +1,9 @@
-Amazonas Voces y Raíces — encabezado compacto
+Amazonas Voces y Raíces
 
-1. Descomprime este ZIP. Todos los archivos están en la raíz, junto a la carpeta images/.
-2. Abre index.html para comprobarlo.
-3. En GitHub reemplaza index.html y style.css (y comprueba que images/logo.png exista).
-4. No subas una carpeta contenedora nueva: pon los archivos directamente en la raíz del repositorio.
+Abre index.html en el navegador.
 
-Medidas: computadora 116px de alto, imagen 100px de alto (86%); tableta 98px/82px (84%); móvil 82px/70px (85%).
-El parametro ?v=compacto-20261101 en index.html evita que el navegador siga sirviendo una copia antigua del CSS.
+Encabezado blanco: 116 px en computadora y 82 px en celular (sin aumentar su altura).
+Logo: 109.04 px de alto (94 % del encabezado) en computadora; 76.26 px de alto (93 %) en celular.
+En tabletas: encabezado 98 px y logo 92.12 px (94 %).
+
+Para GitHub Pages, sube index.html, style.css, script.js y la carpeta images a la raíz del repositorio.

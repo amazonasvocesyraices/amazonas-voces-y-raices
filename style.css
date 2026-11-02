@@ -1188,32 +1188,36 @@ h2 em {
 }
 
 
-/* ENCABEZADO COMPACTO - reglas únicas, sin duplicados */
+/* ENCABEZADO: fondo blanco fijo, logo proporcional a su altura */
 .site-header {
   height: 116px;
-  min-height: 0;
-  padding: 8px 34px;
+  min-height: 116px;
+  padding: 0 34px;
   gap: 22px;
 }
 .brand { flex: 0 0 auto; gap: 0; }
 .brand .logo-img,
 .brand img.logo-img {
-  width: 108px;
-  height: 100px;
+  display: block;
+  height: 94%;
+  width: auto;
   max-width: none;
   flex: 0 0 auto;
   object-fit: contain;
   border-radius: 0;
   background: transparent;
 }
+/* 94 % de 116px = 109.04px. El logo conserva su proporción. */
+.brand img.logo-img { height: 109.04px; }
 html { scroll-padding-top: 128px; }
-@media (max-width: 950px) {
-  .site-header { height: 98px; min-height: 0; padding: 7px 22px; }
-  .brand img.logo-img { width: 88px; height: 82px; }
+@media (max-width: 950px) and (min-width: 651px) {
+  .site-header { height: 98px; min-height: 98px; padding: 0 22px; }
+  .brand img.logo-img { height: 92.12px; width: auto; }
   html { scroll-padding-top: 110px; }
 }
 @media (max-width: 650px) {
-  .site-header { height: 82px; min-height: 0; padding: 6px 16px; }
-  .brand img.logo-img { width: 72px; height: 70px; }
+  .site-header { height: 82px; min-height: 82px; padding: 0 16px; }
+  /* 93 % de 82px = 76.26px */
+  .brand img.logo-img { height: 76.26px; width: auto; }
   html { scroll-padding-top: 94px; }
 }
