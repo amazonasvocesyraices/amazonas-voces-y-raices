@@ -1,7 +1,6 @@
-# Amazonas Voces y Raíces — logo horizontal actualizado
+# Amazonas Voces y Raíces — Encabezado equilibrado
 
-Abre `index.html` para revisar la web. Para GitHub Pages, coloca en la raíz del repositorio `index.html`, `style.css`, `script.js` y la carpeta `images` con `logo.png`.
+Abre `index.html`. Para GitHub Pages sube `index.html`, `style.css`, `script.js` y la carpeta `images/` a la raíz del repositorio.
 
-Se utiliza **exactamente la imagen horizontal que enviaste**, recortando exclusivamente el margen transparente exterior. No se añade texto independiente.
-
-Logo: **170 px de altura visible en escritorio**; encabezado blanco: **182 px**. En celular: logo **72 px** dentro de encabezado de **84 px**. El ancho se calcula automáticamente respetando la proporción original.
+En computadora: fondo blanco fijo de 124 px y logo horizontal de 116 px de alto (aprox. 312 px de ancho). Margen de 4 px arriba y abajo.
+En celular: fondo fijo de 84 px y logo de hasta 76 px de alto, adaptado al espacio disponible. No hay texto adicional al costado.
