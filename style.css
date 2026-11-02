@@ -1251,3 +1251,27 @@ html { scroll-padding-top: 145px; }
   .brand img.logo-img { width: 58px; height: 58px; }
   .brand .brand-name { font-size: 13px; }
 }
+
+/* Ajuste final: ampliar el emblema REAL sin ampliar innecesariamente el texto */
+.site-header { min-height: 148px; padding-block: 8px; }
+.brand { gap: 16px; }
+.brand img.logo-img { width: 130px; height: 130px; flex: 0 0 130px; object-fit: contain; }
+.brand .brand-name { font-size: 21px; }
+html { scroll-padding-top: 162px; }
+@media (max-width: 1100px) {
+  .site-header { min-height: 116px; }
+  .brand img.logo-img { width: 100px; height: 100px; flex-basis:100px; }
+  .brand .brand-name { font-size: 18px; }
+  html { scroll-padding-top: 130px; }
+}
+@media (max-width: 650px) {
+  .site-header { min-height: 92px; padding: 7px 16px; }
+  .brand { gap: 9px; }
+  .brand img.logo-img { width: 76px; height: 76px; flex-basis:76px; }
+  .brand .brand-name { font-size: 15px; }
+  html { scroll-padding-top: 104px; }
+}
+@media (max-width: 370px) {
+  .brand img.logo-img { width: 66px; height: 66px; flex-basis:66px; }
+  .brand .brand-name { font-size: 13px; }
+}
