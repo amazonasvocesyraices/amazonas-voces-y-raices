@@ -1293,3 +1293,21 @@ html { scroll-padding-top: 162px; }
   .brand img.logo-img { width: 90px; height: 90px; flex: 0 0 90px; }
   html { scroll-padding-top: 117px; }
 }
+
+
+/* AJUSTE DEFINITIVO — tamaño visible del emblema respecto al encabezado */
+@media (min-width: 1101px) {
+  .site-header { min-height: 232px; padding-block: 11px; }
+  .brand img.logo-img { width: 210px; height: 210px; flex: 0 0 210px; max-width: none; object-fit: contain; }
+  html { scroll-padding-top: 248px; }
+}
+@media (min-width: 651px) and (max-width: 1100px) {
+  .site-header { min-height: 162px; padding-block: 9px; }
+  .brand img.logo-img { width: 140px; height: 140px; flex: 0 0 140px; max-width: none; object-fit: contain; }
+  html { scroll-padding-top: 178px; }
+}
+@media (max-width: 650px) {
+  .site-header { min-height: 113px; padding-block: 9px; }
+  .brand img.logo-img { width: 95px; height: 95px; flex: 0 0 95px; max-width: none; object-fit: contain; }
+  html { scroll-padding-top: 128px; }
+}
