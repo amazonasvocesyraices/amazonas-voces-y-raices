@@ -1,5 +1,9 @@
-Amazonas Voces y Raíces — logo ampliado.
+Amazonas Voces y Raíces — encabezado compacto
 
-Escritorio: logo 210 × 210 px, encabezado blanco de altura mínima 232 px. Proporción vertical del logo respecto al encabezado: 210/232 = 90,5 %. Aumento desde 165 px: 45 px (+27,3 %). Tablet: logo 140 px / encabezado 162 px = 86,4 %. Celular: logo 95 px / encabezado 113 px = 84,1 %.
+1. Descomprime este ZIP. Todos los archivos están en la raíz, junto a la carpeta images/.
+2. Abre index.html para comprobarlo.
+3. En GitHub reemplaza index.html y style.css (y comprueba que images/logo.png exista).
+4. No subas una carpeta contenedora nueva: pon los archivos directamente en la raíz del repositorio.
 
-Descomprime y abre index.html. Para GitHub Pages sube index.html, style.css, script.js y la carpeta images con logo.png.
+Medidas: computadora 116px de alto, imagen 100px de alto (86%); tableta 98px/82px (84%); móvil 82px/70px (85%).
+El parametro ?v=compacto-20261101 en index.html evita que el navegador siga sirviendo una copia antigua del CSS.
