@@ -106,10 +106,12 @@ a {
 }
 
 .brand img {
-  width: 62px;
-  height: 48px;
+  display: block;
+  width: 74px;
+  height: 74px;
   object-fit: contain;
-  border-radius: 5px;
+  background: transparent;
+  border-radius: 0;
 }
 
 .main-nav {
@@ -995,8 +997,8 @@ h2 em {
   }
 
   .brand img {
-    width: 48px;
-    height: 42px;
+    width: 54px;
+    height: 54px;
   }
 
   .hero {
@@ -1183,19 +1185,4 @@ h2 em {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-}
-
-/* Logo oficial: proporciones originales y sin duplicar texto */
-.brand { flex-shrink: 0; min-width: 0; }
-.brand .logo-img {
-  display: block;
-  width: clamp(175px, 19vw, 275px);
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 0;
-  background: transparent;
-}
-@media (max-width: 650px) {
-  .brand .logo-img { width: min(205px, 63vw); height: auto; }
 }
