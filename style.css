@@ -76,9 +76,9 @@ a {
 /* ENCABEZADO */
 
 .site-header {
-  height: 100px;
+  height: 90px;
   min-height: 0;
-  padding: 4px 30px;
+  padding: 0 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -88,6 +88,8 @@ a {
   top: 0;
   z-index: 100;
   border-bottom: 1px solid rgba(23, 63, 50, 0.08);
+  box-sizing: border-box;
+  overflow: visible;
 }
 
 .brand {
@@ -1215,19 +1217,18 @@ h2 em {
   overflow: visible;
 }
 .site-header .brand {
+  position: relative;
+  height: 90px;
   display: flex;
   align-items: center;
-  flex: 0 0 auto;
-  height: 116px;
-  gap: 0;
-  min-width: 0;
+  flex-shrink: 0;
 }
 .site-header .brand > img.logo-img {
   display: block;
-  height: 116px;
+  height: 250px;
   width: auto;
   max-width: none;
-  max-height: 116px;
+  max-height: 250px;
   object-fit: contain;
   flex: 0 0 auto;
   border-radius: 0;
