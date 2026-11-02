@@ -106,12 +106,10 @@ a {
 }
 
 .brand img {
-  display: block;
-  width: 74px;
-  height: 74px;
+  width: 62px;
+  height: 48px;
   object-fit: contain;
-  background: transparent;
-  border-radius: 0;
+  border-radius: 5px;
 }
 
 .main-nav {
@@ -997,8 +995,8 @@ h2 em {
   }
 
   .brand img {
-    width: 54px;
-    height: 54px;
+    width: 48px;
+    height: 42px;
   }
 
   .hero {
@@ -1185,39 +1183,4 @@ h2 em {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
-}
-
-
-/* ENCABEZADO: fondo blanco fijo, logo proporcional a su altura */
-.site-header {
-  height: 116px;
-  min-height: 116px;
-  padding: 0 34px;
-  gap: 22px;
-}
-.brand { flex: 0 0 auto; gap: 0; }
-.brand .logo-img,
-.brand img.logo-img {
-  display: block;
-  height: 94%;
-  width: auto;
-  max-width: none;
-  flex: 0 0 auto;
-  object-fit: contain;
-  border-radius: 0;
-  background: transparent;
-}
-/* 94 % de 116px = 109.04px. El logo conserva su proporción. */
-.brand img.logo-img { height: 109.04px; }
-html { scroll-padding-top: 128px; }
-@media (max-width: 950px) and (min-width: 651px) {
-  .site-header { height: 98px; min-height: 98px; padding: 0 22px; }
-  .brand img.logo-img { height: 92.12px; width: auto; }
-  html { scroll-padding-top: 110px; }
-}
-@media (max-width: 650px) {
-  .site-header { height: 82px; min-height: 82px; padding: 0 16px; }
-  /* 93 % de 82px = 76.26px */
-  .brand img.logo-img { height: 76.26px; width: auto; }
-  html { scroll-padding-top: 94px; }
 }
