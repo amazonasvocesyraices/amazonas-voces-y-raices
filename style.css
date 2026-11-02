@@ -1291,12 +1291,12 @@ html { scroll-padding-top: 136px; }
   }
 
   .site-header .brand > img.logo-img {
-    display: block;
-    width: 300px;
+    width: 330px;
     height: auto;
     max-width: 100%;
     max-height: 80px;
     object-fit: contain;
+    object-position: left center;
     object-position: left center;
     margin: 0;
   }
