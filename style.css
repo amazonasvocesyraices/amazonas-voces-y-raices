@@ -1186,26 +1186,3 @@ h2 em {
     transition-duration: 0.01ms !important;
   }
 }
-
-/* Logo circular y nombre al costado, como en el diseño original */
-.brand {
-  flex: 0 0 auto;
-  gap: 12px;
-  min-width: 0;
-}
-.brand .brand-name {
-  display: block;
-  white-space: nowrap;
-  font-size: 17px;
-  line-height: 1.2;
-}
-.brand .brand-name b {
-  display: block;
-}
-@media (max-width: 650px) {
-  .brand { gap: 8px; }
-  .brand .brand-name { font-size: 13px; }
-}
-@media (max-width: 370px) {
-  .brand .brand-name { font-size: 11px; }
-}
