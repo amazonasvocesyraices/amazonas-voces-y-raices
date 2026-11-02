@@ -1202,22 +1202,55 @@ h2 em {
   }
 }
 
-/* Garantiza que el emblema sea visible: sin texto ni reducción por otras reglas */
-@media (min-width: 651px) {
-  .site-header .brand > img.logo-img {
-    width: 120px;
-    height: 108px;
-    max-width: none;
-    flex-shrink: 0;
-    object-fit: contain;
-  }
+
+/* Logo horizontal ACTUAL: 170 px de alto sin deformación.
+   Fondo blanco ajustado a su altura, sin texto HTML duplicado. */
+.site-header {
+  height: 182px;
+  min-height: 182px;
+  padding: 6px clamp(18px, 3vw, 48px);
+  gap: 20px;
 }
-@media (max-width: 650px) {
-  .site-header .brand > img.logo-img {
-    width: 85px;
-    height: 76px;
-    max-width: none;
-    flex-shrink: 0;
-    object-fit: contain;
+.site-header .brand { flex: 0 0 auto; min-width: 0; gap: 0; }
+.site-header .brand > img.logo-img {
+  display: block;
+  height: 170px;
+  width: auto;
+  max-width: none;
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+html { scroll-padding-top: 194px; }
+
+@media (max-width: 1180px) {
+  .menu-toggle { display: block; }
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    padding: 20px 24px 26px;
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    box-shadow: 0 12px 18px rgba(0,0,0,.08);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
   }
+  .main-nav.open { display: flex; }
+  .main-nav a { padding: 13px 0; border-bottom: 1px solid var(--line); }
+  .main-nav .nav-contact { border: 0; padding: 13px 0; }
+}
+
+@media (max-width: 650px) {
+  .site-header {
+    height: 84px;
+    min-height: 84px;
+    padding: 6px 12px;
+  }
+  .site-header .brand > img.logo-img {
+    height: 72px;
+    width: auto;
+    max-width: min(210px, calc(100vw - 85px));
+  }
+  html { scroll-padding-top: 96px; }
 }
