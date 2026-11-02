@@ -1275,3 +1275,21 @@ html { scroll-padding-top: 162px; }
   .brand img.logo-img { width: 66px; height: 66px; flex-basis:66px; }
   .brand .brand-name { font-size: 13px; }
 }
+
+
+/* Tamaño del emblema: 165px en escritorio, sin texto independiente */
+@media (min-width: 1101px) {
+  .site-header { min-height: 181px; }
+  .brand img.logo-img { width: 165px; height: 165px; flex: 0 0 165px; }
+  html { scroll-padding-top: 195px; }
+}
+@media (min-width: 651px) and (max-width: 1100px) {
+  .site-header { min-height: 148px; }
+  .brand img.logo-img { width: 130px; height: 130px; flex: 0 0 130px; }
+  html { scroll-padding-top: 160px; }
+}
+@media (max-width: 650px) {
+  .site-header { min-height: 105px; }
+  .brand img.logo-img { width: 90px; height: 90px; flex: 0 0 90px; }
+  html { scroll-padding-top: 117px; }
+}
